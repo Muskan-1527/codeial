@@ -7,7 +7,8 @@ const db = require('./config/mongoose');
 
 app.use(express.urlencoded());
 
-// app.use(cookieParser);
+//because of this error is coming
+app.use(cookieParser);
 
 app.use(express.static('./assets'));
 
